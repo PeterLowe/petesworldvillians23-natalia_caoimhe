@@ -23,7 +23,7 @@ int main()
 		return 0;
 	}
 
-	std::cout << "Pick a letter from A to B or V to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to B or U to Z" << std::endl; // change this line each iteration
 
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
@@ -82,7 +82,31 @@ int main()
 		}
 	}
 	
-	if (letter == 'v' || letter == 'V')
+	if (letter == 'u' || letter == 'U')
+	{
+		if (region == 1)
+		{
+			std::cout << "United States, Uruguay" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Ukraine, United Kingdom" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "Uganda" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Uzbekistan" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "United Arab Emirates" << std::endl;
+		}
+	}
+
+	if (letter == 'v' || letter == 'V')// wirtten by COB
 	{
 		if (region == 1)
 		{
