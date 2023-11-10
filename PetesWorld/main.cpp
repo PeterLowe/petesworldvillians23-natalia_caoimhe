@@ -22,7 +22,9 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-	std::cout << "Pick a letter from A to B or Z to Z" << std::endl; // change this line each iteration
+
+	std::cout << "Pick a letter from A to B or Y to Z" << std::endl; // change this line each iteration
+
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -55,6 +57,7 @@ int main()
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
 	}	
+
 	if (letter == 'b' || letter == 'B') // written by Natalia
 	{
 		if (region == 1)
@@ -76,6 +79,30 @@ int main()
 		if (region == 5)
 		{
 			std::cout << "Bahamas, Bahrain Arabian, Barbados" << std::endl;
+		}
+	}
+	
+	if (letter == 'y' || letter == 'Y')// written by caoimhe 
+	{
+		if (region == 1)
+		{
+			std::cout << "There are no Ys in the Americas" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "There are no Ys in Europe" <<std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "There are no Ys in Africa" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "There are Ys in Asia" << std::endl; // Yemen is in Asia but was listed as middle east?
+		}
+		if (region == 5)
+		{
+			std::cout << "Yemen" << std::endl;
 		}
 	}
 
